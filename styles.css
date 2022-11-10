@@ -13,12 +13,20 @@ img {
 
 .north {
   transform: rotate(-90deg);
+  transition: transform 300ms ease-in-out;
 }
 
 .south {
   transform: rotate(90deg);
+  transition: transform 300ms ease-in-out;
 }
 
 .west {
   transform: rotate(180deg);
+  transition: transform 300ms ease-in-out;
+}
+
+.east {
+  transform: rotate(0deg);
+  transition: transform 300ms ease-in-out;
 }

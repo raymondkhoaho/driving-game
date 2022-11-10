@@ -8,7 +8,7 @@ function rotateCar(event) {
   } else if (event.key === 'ArrowUp') {
     $car.setAttribute('class', 'car north');
   } else if (event.key === 'ArrowRight') {
-    $car.setAttribute('class', 'car');
+    $car.setAttribute('class', 'car east');
   }
 }
 
