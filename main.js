@@ -12,4 +12,24 @@ function rotateCar(event) {
   }
 }
 
+var id = setInterval(moveCar, 16);
+clearInterval(id);
+
+var position = 0;
+function startCar(event) {
+  if (event.key === ' ') {
+    id = setInterval(moveCar, 16);
+  }
+
+}
+function moveCar() {
+  if (position === 100) {
+    clearInterval(id);
+  } else {
+    position++;
+    $car.style.left = position + '2px';
+  }
+}
+
 document.addEventListener('keydown', rotateCar);
+document.addEventListener('keydown', startCar);

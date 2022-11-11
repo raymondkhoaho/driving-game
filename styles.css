@@ -5,10 +5,12 @@
 body {
   max-width: 1000px;
   background-color: #298d26;
+  position: relative;
 }
 
 img {
   width: 25%;
+  position: absolute;
 }
 
 .north {
